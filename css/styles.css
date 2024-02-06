@@ -28,6 +28,10 @@ body {
   color: white;
 }
 
+#toggleText {
+  color: #21209C;
+}
+
 
 @font-face {
   font-family: 'cocogoose';
