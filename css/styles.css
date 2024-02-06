@@ -24,7 +24,11 @@ body {
   width: 50vw;
   height: 100vh;
   background-color: black;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100vh;
+  justify-content: center;
+  text-align: center;
   color: white;
 }
 
@@ -32,7 +36,46 @@ body {
   color: #21209C;
 }
 
+.mainPageLinks {
+  color: white;
+  font-family: cocogoose;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  cursor: pointer;
+  justify-self: center;
+  font-size: 2.5vh;
+  transition: font-size 0.2s;
+}
 
+.mainPageLinks:hover {
+  font-size: 3.5vh;
+}
+
+
+/**************** SKILLS DIVISION *************/
+
+#skillsDiv {
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+}
+
+
+
+/*************** PROJECTS DIVISION ************/
+
+#projectsDiv {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  
+}
+
+
+
+/******** FONTS *******/
 @font-face {
   font-family: 'cocogoose';
   src: url('../fonts/cocogoose-pro.regular.ttf') format('truetype');
