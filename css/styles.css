@@ -23,7 +23,7 @@ body {
 #buttonsDiv {
   width: 50vw;
   height: 100vh;
-  background-color: black;
+  background-color: #1D242B;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 100vh;
@@ -33,7 +33,7 @@ body {
 }
 
 #toggleText {
-  color: #21209C;
+  color: #0077C0;
 }
 
 .mainPageLinks {
@@ -67,10 +67,25 @@ body {
 #projectsDiv {
   height: 100vh;
   width: 100vw;
-  background-color: black;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  
+  font-family: cocogoose;
+  text-align: center;
+}
+
+#aiDiv {
+  background-color: #1D242B;
+  color: #0077C0;
+}
+
+#softwareDiv {
+  background-color: #0077C0;
+  color: white;
+}
+
+#webDiv {
+  background-color: white;
+  color: #1D242B;
 }
 
 
