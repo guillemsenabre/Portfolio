@@ -12,7 +12,12 @@ body {
   width: 50vw;
   height: 100vh;
   display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
   background-color: #F1F1F1;
+  font-family: cocogoose;
+  font-size: 5vh;
 }
 
 #buttonsDiv {
@@ -21,4 +26,10 @@ body {
   background-color: black;
   display: flex;
   color: white;
+}
+
+
+@font-face {
+  font-family: 'cocogoose';
+  src: url('../fonts/cocogoose-pro.regular.ttf') format('truetype');
 }
