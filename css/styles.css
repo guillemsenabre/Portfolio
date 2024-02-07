@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
 }
@@ -41,6 +45,7 @@ body {
   font-family: cocogoose;
   writing-mode: vertical-lr;
   text-orientation: upright;
+  text-decoration: none;
   cursor: pointer;
   justify-self: center;
   font-size: 2.5vh;
@@ -105,6 +110,26 @@ body {
 
 .projectItems:hover {
   font-size: 3.2vh;
+}
+
+#aiDot{
+  color: #F1F1F1;
+}
+
+#electrDot{
+  color: #1D242B;
+}
+
+#webDot{
+  color:#0077C0;
+}
+
+/**************** CONTACT DIVISION *************/
+
+#contactDiv {
+  height: 100vh;
+  width: 100vw;
+  background-color: #1D242B;
 }
 
 
