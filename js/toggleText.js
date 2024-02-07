@@ -16,3 +16,4 @@ function toggleText () {
 }
 
 setInterval(toggleText,3000);
+
