@@ -127,11 +127,59 @@ body {
 /**************** CONTACT DIVISION *************/
 
 #contactDiv {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   background-color: #1D242B;
 }
 
+#mediaDiv {
+  height: 50vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #F1F1F1;
+  font-family: cocogoose;
+}
+
+#textContact {
+  height: 50vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #F1F1F1;
+  font-family: cocogoose;
+}
+
+#mediaList {
+  padding: 0;
+  display: flex;
+  list-style: none;
+  column-gap: 10vh; 
+}
+
+#inLogo {
+  height: 5vh;
+  width: 5vh;
+  background-image: url('../media/whiteIn.png');
+  background-size: cover;
+}
+
+#gitLogo {
+  height: 5vh;
+  width: 5vh;
+  background-image: url('../media/githubLogoWhite.png');
+  background-size: cover;
+}
+
+#gmailLogo {
+  height: 5vh;
+  width: 5vh;
+  background-image: url('../media/whiteIn.png');
+  background-size: cover;
+}
 
 
 
