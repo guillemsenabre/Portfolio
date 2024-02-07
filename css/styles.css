@@ -225,25 +225,38 @@ body {
   cursor: pointer;
 }
 
-#inLogo {
+.mediaLogos {
   height: 5vh;
   width: 5vh;
-  background-image: url('../media/whiteIn.png');
   background-size: cover;
+  transition: height 0.2s, width 0.2s;
+}
+
+#inLogo {
+  background-image: url('../media/whiteIn.png');
 }
 
 #gitLogo {
-  height: 5vh;
-  width: 5vh;
   background-image: url('../media/githubLogoWhite.png');
-  background-size: cover;
 }
 
 #gmailLogo {
-  height: 5vh;
-  width: 5vh;
   background-image: url('../media/gmail100white.png');
-  background-size: cover;
+}
+
+#inLogo:hover {
+  height: 6.5vh;
+  width: 6.5vh;
+}
+
+#gitLogo:hover {
+  height: 6.5vh;
+  width: 6.5vh;
+}
+
+#gmailLogo:hover {
+  height: 6.5vh;
+  width: 6.5vh;
 }
 
 
