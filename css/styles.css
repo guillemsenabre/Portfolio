@@ -93,6 +93,26 @@ body {
   border-bottom: 1px solid rgb(255, 255, 255);
 }
 
+#cmdTitleList {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  column-gap: 0.5vw;
+}
+
+#cmdTitleIcon {
+  height: 2vh;
+  width: 2vh;
+  background-image: url('../media/cmdIcon.png');
+  background-size: cover;
+}
+
+#cmdTitleText {
+  margin: 0;
+}
+
 #cmdContent {
   display: flex;
   flex-direction: column;
