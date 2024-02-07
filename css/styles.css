@@ -59,10 +59,52 @@ body {
 
 /**************** SKILLS DIVISION *************/
 
-#skillsDiv {
+#skillsAboutDiv {
   height: 100vh;
   width: 100vw;
+  display: flex;
   background-color: #1D242B;
+}
+
+#aboutDiv {
+  height: 100vh;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#cmdWindow {
+  width: 42vw;
+  height: 85vh;
+  background-color:#0c0c0c;
+  border: 1px solid #191919;
+  overflow: hidden;
+  font-family: "Courier New", monospace;
+  color: #ffffff;
+}
+
+#cmdTitle {
+  background-color: #ffffff;
+  justify-content: center;
+  color: black;
+  padding: 5px;
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+#cmdContent {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  height: calc(100% - 30px);
+  overflow-y: auto;
+}
+
+#skillsDiv {
+  height: 100vh;
+  width: 50vw;
+  display: flex;
 }
 
 
@@ -178,7 +220,7 @@ body {
 #gmailLogo {
   height: 5vh;
   width: 5vh;
-  background-image: url('../media/gmail50white.png');
+  background-image: url('../media/gmail100white.png');
   background-size: cover;
 }
 
