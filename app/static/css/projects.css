@@ -9,6 +9,10 @@
   text-align: center;
 }
 
+.projectTitles {
+  font-size: 5vh;
+}
+
 #aiDiv {
   background-color: #1D242B;
   color: #0077C0;
