@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survived Titanic?</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+  <div id="formDiv">
+    <form action="/" method="post">
+      <p>
+        <label for="sex">Sex</label><br>
+        <select id="sex" name="sex" class="boxStyle" aria-placeholder="">
+          <option value="" disabled selected></option>
+          <option value="1">Female</option>
+          <option value="0">Male</option>
+        </select><br>
+      </p>
+      <p>
+        <label for="cabin">Cabin</label><br>
+        <select id="cabin" name="cabin" class="boxStyle">
+          <option value="" disabled selected></option>
+          <option value="1">I'd have had a cabin</option>
+          <option value="0">Nah</option>
+        </select><br>
+      </p>
+      <p>
+        <label for="age">Your age</label><br>
+        <input type="number" name="age" id="age" class="boxStyle" min="0" max="100" required><br>
+      </p>
+      <p>
+        <label for="fare">How much would you have payed?</label><br>
+        <input type="number" name="fare" id="fare" class="boxStyle" min="0" max="300" required>
+      </p>
+      <div>
+        <input type="submit" value="Let's go" id="submitBtn">
+      </div>
+    </form>
+  </div>
+  <div id="answerDiv">
+    <div id="h1Div">
+      <h1>
+        Would you have survived the Titanic?
+      </h1>
+    </div>
+    <div id="containerResultDiv">
+      {% if result %}
+        <div>
+            <p id="result">{{ result }}</p>
+            <p id="survivalText">% of survival</p>
+        </div>  
+      {% endif %}
+    </div>
+    <div id="containerResultTextDiv">
+      {% if result%}
+        <div id="resultText">
+          <h3>{{ resultText }}</h3>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</body>
+</html>
