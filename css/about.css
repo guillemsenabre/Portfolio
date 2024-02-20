@@ -1,0 +1,65 @@
+/**************** ABOUT DIVISION *************/
+
+#skillsAboutDiv {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  background-color: #1D242B;
+}
+
+#aboutDiv {
+  height: 100vh;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#cmdWindow {
+  width: 42vw;
+  height: 85vh;
+  background-color:#0c0c0c;
+  border: 1px solid #191919;
+  overflow: hidden;
+  font-family: "Courier New", monospace;
+  color: #ffffff;
+}
+
+#cmdTitle {
+  background-color: #ffffff;
+  justify-content: center;
+  color: black;
+  padding: 5px;
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+#cmdTitleList {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  column-gap: 0.5vw;
+}
+
+#cmdTitleIcon {
+  height: 2vh;
+  width: 2vh;
+  background-image: url('../media/cmdIcon.png');
+  background-size: cover;
+}
+
+#cmdTitleText {
+  margin: 0;
+  font-size: 2.5vh;
+}
+
+#cmdContent {
+  display: flex;
+  flex-direction: column;
+  padding: 2vh;
+  height: calc(100% - 30px);
+  overflow-y: auto;
+  font-size: 2.5vh;
+}
