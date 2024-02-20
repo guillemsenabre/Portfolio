@@ -1,0 +1,96 @@
+/**************** SKILLS ICONS DIVISION *************/
+
+
+#skillsDiv {
+  height: 100vh;
+  width: 50vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+#htmlImg {
+  height: 7vh;
+  width: 7vh;
+  animation: orbitAnimation1 70s linear infinite alternate;
+  background-image: url('../media/html.png');
+  background-size: cover;
+}
+
+@keyframes orbitAnimation1 {
+  0% {
+    transform: rotate(0deg) translateY(50vh) translateX(15vh);
+  }
+  100% {
+    transform: translateY(50vh) translateX(10vh) rotate(180deg);
+  }
+}
+
+#cssImg {
+  height: 3vh;
+  width: 3vh;
+  animation: orbitAnimation2 70s linear infinite alternate;
+  background-image: url('../media/css3.png');
+  background-size: cover;
+}
+
+@keyframes orbitAnimation2 {
+  0% {
+    transform: rotate(2deg) translateY(45vh) translateX(35vh);
+  }
+  100% {
+    transform: translateY(40vh) translateX(10vh) rotate(170deg);
+  }
+}
+
+#jsImg {
+  height: 8vh;
+  width: 8vh;
+  background-image: url('../media/js.png');
+  background-size: cover;
+  animation: orbitAnimation3 70s linear infinite alternate;
+
+}
+
+@keyframes orbitAnimation3 {
+  0% {
+    transform: rotate(-2deg) translateY(35vh) translateX(0vh);
+  }
+  100% {
+    transform: translateY(15vh) translateX(10vh) rotate(260deg);
+  }
+}
+
+#pyImg {
+  height: 7vh;
+  width: 7vh;
+  background-image: url('../media/py2.png');
+  background-size: cover;
+  animation: orbitAnimation4 69s linear infinite alternate;
+}
+
+@keyframes orbitAnimation4 {
+  0% {
+    transform: rotate(60deg) translateY(30vh) translateX(0vh);
+  }
+  100% {
+    transform: translateY(15vh) translateX(30vh) rotate(230deg);
+  }
+}
+
+#reactImg {
+  height: 11vh;
+  width: 11vh;
+  background-image: url('../media/reactsq.png');
+  background-size: cover;
+  animation: orbitAnimation5 68s linear infinite alternate;
+}
+
+@keyframes orbitAnimation5 {
+  0% {
+    transform: rotate(0deg) translateY(35vh) translateX(0vh);
+  }
+  100% {
+    transform: translateY(15vh) translateX(10vh) rotate(130deg);
+  }
+}
