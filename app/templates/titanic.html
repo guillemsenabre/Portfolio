@@ -1,17 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Survived Titanic?</title>
-    <link rel="stylesheet" href="../static/css/style.css">
-</head>
-<body>
-  <div id="formDiv">
+<div id="titanicDiv"> 
+  <div id="titanicFormDiv">
     <form action="/" method="post">
       <p>
         <label for="sex">Sex</label><br>
-        <select id="sex" name="sex" class="boxStyle" aria-placeholder="">
+        <select id="titanicSex" name="sex" class="titanicBoxStyle" aria-placeholder="">
           <option value="" disabled selected></option>
           <option value="1">Female</option>
           <option value="0">Male</option>
@@ -19,7 +11,7 @@
       </p>
       <p>
         <label for="cabin">Cabin</label><br>
-        <select id="cabin" name="cabin" class="boxStyle">
+        <select id="titanicCabin" name="cabin" class="titanicBoxStyle">
           <option value="" disabled selected></option>
           <option value="1">I'd have had a cabin</option>
           <option value="0">Nah</option>
@@ -27,38 +19,37 @@
       </p>
       <p>
         <label for="age">Your age</label><br>
-        <input type="number" name="age" id="age" class="boxStyle" min="0" max="100" required><br>
+        <input type="number" name="age" id="titanicAge" class="titanicBoxStyle" min="0" max="100" required><br>
       </p>
       <p>
         <label for="fare">How much would you have payed?</label><br>
-        <input type="number" name="fare" id="fare" class="boxStyle" min="0" max="300" required>
+        <input type="number" name="fare" id="titanicFare" class="titanicBoxStyle" min="0" max="300" required>
       </p>
       <div>
-        <input type="submit" value="Let's go" id="submitBtn">
+        <input type="submit" value="Let's go" id="titanicSubmitBtn">
       </div>
     </form>
   </div>
-  <div id="answerDiv">
-    <div id="h1Div">
-      <h1>
+  <div id="titanicAnswerDiv">
+    <div id="titanicTitleDiv">
+      <h1 id="titanicTitle">
         Would you have survived the Titanic?
       </h1>
     </div>
-    <div id="containerResultDiv">
+    <div id="titatnicContainerResultDiv">
       {% if result %}
         <div>
-            <p id="result">{{ result }}</p>
-            <p id="survivalText">% of survival</p>
+            <p id="titanicResult">{{ result }}</p>
+            <p id="titanicSurvivalText">% of survival</p>
         </div>  
       {% endif %}
     </div>
-    <div id="containerResultTextDiv">
+    <div id="titanicContainerResultTextDiv">
       {% if result%}
-        <div id="resultText">
-          <h3>{{ resultText }}</h3>
+        <div id="titanicResultText">
+          <h3 class="fontLarge">{{ resultText }}</h3>
         </div>
       {% endif %}
     </div>
   </div>
-</body>
-</html>
+</div>
