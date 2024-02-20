@@ -1,0 +1,56 @@
+/*************** PROJECTS DIVISION ************/
+
+#projectsDiv {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-family: cocogoose;
+  text-align: center;
+}
+
+#aiDiv {
+  background-color: #1D242B;
+  color: #0077C0;
+}
+
+
+#electronicsDiv {
+  background-color: #0077C0;
+  color: white;
+}
+
+#webDiv {
+  background-color: white;
+  color: #1D242B;
+}
+
+.projectsList {
+  text-align: center;
+  list-style: none;
+  padding: 0;
+  margin-top: 10vh;
+  cursor: pointer;
+}
+
+.projectItems {
+  font-size: 2.5vh;
+  transition: font-size 0.2s;
+  margin-top: 8vh
+}
+
+.projectItems:hover {
+  font-size: 3.2vh;
+}
+
+#aiDot{
+  color: #F1F1F1;
+}
+
+#electrDot{
+  color: #1D242B;
+}
+
+#webDot{
+  color:#0077C0;
+}
