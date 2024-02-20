@@ -396,3 +396,53 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# Ignore Python virtual environment
+venv/
+
+# Ignore pycache and __pycache__ directories
+__pycache__/
+*.pyc
+
+# Ignore environment configuration files
+.env
+
+# Ignore Flask generated files
+instance/
+
+# Ignore logs
+logs/
+
+# Ignore SQLite database file
+*.db
+
+# Ignore generated files and directories
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite
+*.log
+*.pyz
+*.pyw
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore local configuration files
+instance/
+.config/
+
+# Ignore IDE files
+.vscode/
+.idea/
+*.iml
+
+# Ignore pycache and __pycache__ directories
+__pycache__/
+*.pyc
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
