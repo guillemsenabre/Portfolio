@@ -1,0 +1,49 @@
+#mainDiv {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+#descriptionDiv {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  background-color: #F1F1F1;
+  font-family: cocogoose;
+  font-size: 5vh;
+}
+
+#buttonsDiv {
+  width: 50vw;
+  height: 100vh;
+  background-color: #1D242B;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100vh;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+#toggleText {
+  color: #0077C0;
+}
+
+.mainPageLinks {
+  color: white;
+  font-family: cocogoose;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  text-decoration: none;
+  cursor: pointer;
+  justify-self: center;
+  font-size: 2.5vh;
+  transition: font-size 0.2s;
+}
+
+.mainPageLinks:hover {
+  font-size: 3.5vh;
+}
