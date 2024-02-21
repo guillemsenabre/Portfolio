@@ -1,14 +1,15 @@
 function getPredictions() {
-  const sex = document.getElementById('titanicSex').value;
-  const cabin = document.getElementById('titanicCabin').value;
-  const fare = document.getElementById('titanicFare').value;
 
-  const inputData = [sex, fare, cabin]
+  const inputData = {
+    sex: document.getElementById('titanicSex').value,
+    cabin: document.getElementById('titanicCabin').value,
+    fare: document.getElementById('titanicFare').value
+  }
 
   fetch('/getPredictions', { // Make the fetch request
     method: 'POST',
     body: JSON.stringify(inputData),
-    headers: { 'Content-Type': 'application/json' }
+    headers: { 'Content-Type': 'application/json', 'allow': 'POST'}
   })
   .then(response => response.json()) // Parse JSON response
   .then(data => {
