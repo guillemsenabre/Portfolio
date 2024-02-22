@@ -1,9 +1,18 @@
 function getPredictions() {
-
+  sex = document.getElementById('titanicSex').value,
+  cabin = document.getElementById('titanicCabin').value,
+  fare = document.getElementById('titanicFare').value
+  
+  // Check if any of the required values is null
+  if (sex === "" || cabin === "" || fare === "") {
+    // Handle the case where any of the values is null
+    alert("Please fill in all required fields.");
+    return;
+  }
   const inputData = {
-    sex: document.getElementById('titanicSex').value,
-    cabin: document.getElementById('titanicCabin').value,
-    fare: document.getElementById('titanicFare').value
+    sex: sex,
+    cabin: cabin,
+    fare: fare
   }
 
   fetch('/getPredictions', { // Make the fetch request
