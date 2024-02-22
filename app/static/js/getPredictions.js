@@ -9,7 +9,7 @@ function getPredictions() {
   fetch('/getPredictions', { // Make the fetch request
     method: 'POST',
     body: JSON.stringify(inputData),
-    headers: { 'Content-Type': 'application/json', 'allow': 'POST'}
+    headers: { 'Content-Type': 'application/json'}
   })
   .then(response => response.json()) // Parse JSON response
   .then(data => {
@@ -19,7 +19,7 @@ function getPredictions() {
 
     titanicResult.textContent = data.prob_yes; // Update HTML content
     titanicResultText.textContent = data.result_text;
-    titanicSurvivalText.textContent = 'pct of survival'
+    titanicSurvivalText.textContent = 'pct of survival 1234567890'
   })
   .catch(error => { // Handle errors
     console.error('Error fetching data:', error);

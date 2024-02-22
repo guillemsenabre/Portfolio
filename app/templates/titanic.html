@@ -1,9 +1,9 @@
 <div id="titanicDiv"> 
   <div id="titanicFormDiv">
-    <form action="/" method="post">
+    <div id="formDiv">
       <p>
         <label for="sex">Sex</label><br>
-        <select id="titanicSex" name="sex" class="titanicBoxStyle" aria-placeholder="">
+        <select id="titanicSex" name="sex" class="titanicBoxStyle">
           <option value="" disabled selected></option>
           <option value="1">Female</option>
           <option value="0">Male</option>
@@ -26,10 +26,10 @@
         <input type="number" name="fare" id="titanicFare" class="titanicBoxStyle" min="0" max="300" required>
       </p>
       <div>
-        <input type="submit" value="Let's go" id="titanicSubmitBtn">
+        <button id="titanicSubmitBtn" onclick="getPredictions()">Let's go</button>
       </div>
-    </form>
-  </div>
+    </div>
+  </div>  
   <div id="titanicAnswerDiv">
     <div id="titanicTitleDiv">
       <h1 id="titanicTitle">
@@ -37,19 +37,13 @@
       </h1>
     </div>
     <div id="titatnicContainerResultDiv">
-      {% if result %}
-        <div>
-            <p id="titanicResult">{{ result }}</p>
-            <p id="titanicSurvivalText">% of survival</p>
-        </div>  
-      {% endif %}
+      <div>
+          <p id="titanicResult"></p>  <!-- The result will be fetched from flask-->
+          <p id="titanicSurvivalText"></p>  <!-- Will be rendered together with the prediction-->
+      </div>  
     </div>
     <div id="titanicContainerResultTextDiv">
-      {% if result%}
-        <div id="titanicResultText">
-          <h3 class="fontLarge">{{ resultText }}</h3>
-        </div>
-      {% endif %}
+      <div id="titanicResultText" class="fontLarge"></div>  <!-- The result will be fetched from flask-->
     </div>
   </div>
 </div>
