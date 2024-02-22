@@ -19,7 +19,7 @@ function getPredictions() {
 
     titanicResult.textContent = data.prob_yes; // Update HTML content
     titanicResultText.textContent = data.result_text;
-    titanicSurvivalText.textContent = 'pct of survival 1234567890'
+    titanicSurvivalText.textContent = '%'
   })
   .catch(error => { // Handle errors
     console.error('Error fetching data:', error);

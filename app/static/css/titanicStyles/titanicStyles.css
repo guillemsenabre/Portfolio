@@ -63,9 +63,7 @@
 #titanicContainerResultDiv {
   height: 50vh;
   width: 100%;
-  display: flex;
   text-align: center;
-  justify-content: center;
 }
 
 #titanicContainerResultTextDiv {
@@ -83,12 +81,18 @@
 
 #titanicResult {
   font-size: 10vh;
+  display: inline-block;
 }
 
 #titanicSurvivalText {
   font-size: 2vh;
+  display: inline-block;
 }
 
 .fontLarge {
   font-size: large;
+}
+
+.courierFont {
+  font-family: 'Courier New', Courier, monospace;
 }
