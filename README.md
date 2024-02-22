@@ -16,10 +16,10 @@ Welcome to my portfolio website!
 
 The site is not hosted yet! To check it out, please follow the steps below:
 
-1. Clone this repository into a local folder git clone https://github.com/BakiRhina/Portfolio.git
+1. Clone this repository into a local folder `git clone https://github.com/BakiRhina/Portfolio.git`
 
-2. Using your terminal travel to the folder where you cloned the repo cd path/to/your/local/folder/Portfolio/
+2. Using your terminal travel to the folder where you cloned the repo `cd path/to/your/local/folder/Portfolio/`
 
-3. Install required dependencies with pip install -r requirements.txt
+3. Install required dependencies with `pip install -r requirements.txt`
 
-4. Run the app with python run.py from the root application directoy
+4. Run the app with `python run.py` from the root application directoy
