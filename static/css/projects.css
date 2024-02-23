@@ -43,6 +43,11 @@
   margin-top: 8vh
 }
 
+.projectItems a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .projectItems:hover {
   font-size: 3.2vh;
 }
