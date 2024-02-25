@@ -2,6 +2,8 @@
 
 Welcome to my portfolio website!
 
+The static site is available here: https://guillemsenabre.github.io/Portfolio/
+
 
 ### Languages and Frameworks
 
