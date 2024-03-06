@@ -18,7 +18,7 @@ The static site is available here: https://guillemsenabre.github.io/Portfolio/
 
 The site is not hosted yet! To check it out, please follow the steps below:
 
-1. Clone this repository into a local folder `git clone https://github.com/BakiRhina/Portfolio.git`
+1. Clone this repository into a local folder `git clone https://github.com/guillemsenabre/Portfolio.git`
 
 2. Using your terminal travel to the folder where you cloned the repo `cd path/to/your/local/folder/Portfolio/`
 
